@@ -1,16 +1,7 @@
-# first_project
+# My first mobile app
 
-A new Flutter project.
+I've been working on this simple app all day. Currently, I'm working on the architecture, logic, and navigation. I'll add more later...
 
-## Getting Started
+![](https://i.pinimg.com/originals/98/c0/fa/98c0fa86f57e524d15d2d68c82193587.gif)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**If anything, everything is written in Flutter.**
