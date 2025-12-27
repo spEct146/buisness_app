@@ -48,6 +48,14 @@ class _MainWrapperState extends State<MainWrapper> {
             _currentIndex = index;
           });
         },
+        backgroundColor: const Color.fromARGB(255, 0, 160, 21),
+        selectedItemColor: const Color.fromARGB(255, 255, 255, 255),// Цвет активной иконки
+        unselectedItemColor: Colors.white60, // Цвет неактивных иконок   
+
+        // Настройка текста:
+        showUnselectedLabels: false,  // Прятать текст у неактивных кнопок
+        selectedFontSize: 14,
+        unselectedFontSize: 12,  
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.business),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'screens/buisness_screen.dart';
 import 'screens/main_wrapper.dart';
 void main() {
   runApp(const MyApp());
@@ -13,6 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color.fromARGB(255, 33, 35, 53),
+      ),
       home: MainWrapper(),
     );
   }

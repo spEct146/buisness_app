@@ -11,15 +11,32 @@ class HistoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title:"Full history"),
-      body: ListView.builder(
-        itemCount: fullHistory.length,
-        itemBuilder: (context, index) {
-          return TransactionCard(
-            transaction: fullHistory[index],
-            index: fullHistory.length - index,
-          );
-        },
+      appBar: CustomAppBar(title: "Full history"),
+      body: Column(
+        children: [
+          Row(         
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              SizedBox(height: 20),
+              Text(
+                "История транзакций",
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+              ),
+            ],
+          ),
+          Expanded(
+            child: ListView.builder(
+                      physics: const BouncingScrollPhysics(),
+                      padding: const EdgeInsets.only(bottom: 20),
+                      itemCount: fullHistory.length,
+                      itemBuilder: (context, index) {
+                        return TransactionCard(
+                          transaction: fullHistory[index],
+                          index: fullHistory.length - index,
+                        );
+                      },
+                    ),
+      ),], 
       ),
     );
   }
